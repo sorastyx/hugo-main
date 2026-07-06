@@ -238,3 +238,11 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+# Last updated time: prefer Git time, then file modification time
+frontmatter:
+  lastmod:
+    - :git
+    - :fileModTime
+
+# Enable Git info
+enableGitInfo: true
