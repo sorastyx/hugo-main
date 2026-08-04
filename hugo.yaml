@@ -196,7 +196,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/sorastyx
           params:
               icon: brand-github
         - identifier: bilibili
@@ -204,12 +204,6 @@ menu:
           url: https://space.bilibili.com/441262168
           params:
               icon: bilibiliLogo
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
-
 related:
     includeNewer: true
     threshold: 60
