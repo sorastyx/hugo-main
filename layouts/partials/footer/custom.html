@@ -140,7 +140,8 @@
 
 <style>
   body {
-    background: url({{ (resources.Get "background/bg3.png").Permalink }}) no-repeat center top;
+    {{ $background := (resources.Get "background/dual_peple.png").Resize "1920x webp q82" }}
+    background: url({{ $background.RelPermalink }}) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
   }
