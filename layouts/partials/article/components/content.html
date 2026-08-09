@@ -1,0 +1,24 @@
+{{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
+{{ $articleContent := .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable }}
+
+{{ if .Params.password_protected }}
+<section class="article-content article-content--locked" data-content-url="{{ .Params.protected_content }}" aria-live="polite">
+    <div class="password-gate">
+        <p class="password-gate-title">这篇文章已加密</p>
+        <p class="password-gate-hint">请输入密码后查看完整内容。</p>
+        <form class="password-gate-form">
+            <label class="password-gate-label" for="article-password">文章密码</label>
+            <div class="password-gate-controls">
+                <input id="article-password" class="password-gate-input" type="password" autocomplete="off" required>
+                <button class="password-gate-button" type="submit">解锁</button>
+            </div>
+            <p class="password-gate-error" role="alert" hidden>密码不正确，请重试。</p>
+        </form>
+    </div>
+    <div class="article-content--protected" hidden></div>
+</section>
+{{ else }}
+<section class="article-content">
+    {{ $articleContent }}
+</section>
+{{ end }}
