@@ -2,7 +2,7 @@
 {{ $articleContent := .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable }}
 
 {{ if .Params.password_protected }}
-<section class="article-content article-content--locked" data-content-url="{{ .Params.protected_content }}" aria-live="polite">
+<section class="article-content article-content--locked" data-content-url="{{ .Params.protected_content }}" data-birthday-effects="{{ if .Params.birthday_effects }}true{{ else }}false{{ end }}" aria-live="polite">
     <div class="password-gate">
         <p class="password-gate-title">这篇文章已加密</p>
         <p class="password-gate-hint">请输入密码后查看完整内容。</p>
@@ -16,6 +16,27 @@
         </form>
     </div>
     <div class="article-content--protected" hidden></div>
+    {{ if .Params.birthday_effects }}
+    <div id="birthday-celebration" class="birthday-celebration" hidden aria-hidden="true">
+        <canvas class="birthday-particles" aria-hidden="true"></canvas>
+        <div class="birthday-celebration-content">
+            <p class="birthday-title">生日快乐</p>
+            <p class="birthday-subtitle">愿你的新一岁，被温柔与欢喜环绕。</p>
+            <div class="birthday-cake" aria-hidden="true">
+                <div class="birthday-candles">
+                    <span class="birthday-candle"><i></i></span>
+                    <span class="birthday-candle"><i></i></span>
+                    <span class="birthday-candle"><i></i></span>
+                    <span class="birthday-candle"><i></i></span>
+                    <span class="birthday-candle"><i></i></span>
+                </div>
+                <div class="birthday-cake-top"></div>
+                <div class="birthday-cake-body"><span></span><span></span><span></span></div>
+                <div class="birthday-cake-plate"></div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
 </section>
 {{ else }}
 <section class="article-content">

@@ -5,6 +5,7 @@ slug: "birthday-260810"
 categories:
   - "纪念"
 password_protected: true
+birthday_effects: true
 protected_content: "/protected/birthday-260810.json"
 ---
 <!-- Protected content is loaded after password verification. -->
