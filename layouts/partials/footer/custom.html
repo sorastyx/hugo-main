@@ -287,28 +287,33 @@
   initCodeMoreBox();
 </script>
 
-<div class="site-visit-count" aria-label="网站访问次数">
-    {{ partial "helper/icon" "eye" }}
-    <span>网站访问</span>
-    <span id="vercount_container_site_pv">
-        <span id="vercount_value_site_pv">loading... </span>次
-    </span>
-</div>
-
 <style>
-    .site-visit-count {
+    .footer-powerby-content {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 0.35rem;
-        margin: 0.75rem 0 1.25rem;
-        color: inherit;
-        font-size: 0.9rem;
-        opacity: 0.75;
+        flex-wrap: wrap;
+        column-gap: 1.25rem;
+        row-gap: 0.35rem;
     }
 
-    .site-visit-count .icon {
-        width: 1.1rem;
-        height: 1.1rem;
+    .footer-credit-text {
+        line-height: 1.8;
+    }
+
+    .site-footer .site-visit-count {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        color: inherit;
+        font: inherit;
+        line-height: inherit;
+        opacity: 0.8;
+        white-space: nowrap;
+    }
+
+    .site-footer .site-visit-count .icon {
+        width: 1em;
+        height: 1em;
     }
 </style>
