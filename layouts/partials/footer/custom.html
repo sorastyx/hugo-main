@@ -3,6 +3,32 @@
     // live2d-widget-v3 组件地址，用来加载 moc3 模型
     const widgetPath = "https://cdn.jsdelivr.net/gh/letere-gzj/live2d-widget-v3@main";
 
+    // vercount 文章浏览数统计
+    const vercountScript = document.createElement("script");
+    vercountScript.defer = true;
+    vercountScript.src = "https://cn.vercount.one/js";
+    document.head.appendChild(vercountScript);
+
+    function showHideViewCount() {
+        const viewCounts = document.querySelectorAll("#viewCount");
+        if (!viewCounts.length) {
+            return;
+        }
+
+        // details.html 也会用于首页文章列表，只在文章详情页显示浏览数。
+        if (!document.querySelector(".article-page")) {
+            viewCounts.forEach((element) => {
+                element.style.display = "none";
+            });
+        }
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", showHideViewCount, { once: true });
+    } else {
+        showHideViewCount();
+    }
+
     // 你的模型静态资源仓库地址
     // 注意：这里用的是你的 GitHub tag：v1.0.0
     // 注意：最后一定要有 /
@@ -260,5 +286,4 @@
   
   initCodeMoreBox();
 </script>
-
 
