@@ -1,6 +1,6 @@
 ---
 title: 关于
-description: 记录推荐系统、音乐、ACGN 与生活片段的个人空间
+description: 记录个人生活轨迹的空间
 about_page: true
 menu:
   main:
@@ -16,12 +16,6 @@ comments: false
   <p class="about-kicker">PERSONAL SPACE · ACGN · RESEARCH</p>
   <h2>你好，我是花鳥風月。</h2>
   <p class="about-lead">这里是一个用来记录学习、科研、兴趣与生活片段的小小空间。欢迎随意逛逛，也欢迎和我分享你喜欢的作品与想法。</p>
-  <div class="about-tags" aria-label="本站关键词">
-    <span>软件工程</span>
-    <span>推荐系统</span>
-    <span>音乐</span>
-    <span>ACGN</span>
-  </div>
 </div>
 
 <div class="about-facts" role="list">
@@ -64,8 +58,10 @@ comments: false
 
 希望这里不只是一个放文章的地方，也能成为一个方便回看、持续生长的小型个人档案。你可以从[主页](/)开始，也可以去[归档](/archives/)看看最近写下的内容。
 
-> 如果你也喜欢音乐、绘画、动画、漫画或游戏，欢迎来和我交换一点想法。愿我们都能在各自喜欢的事物里，找到继续前进的理由。
+> 如果你也喜欢 ACGN 或者 AI 相关的技术，欢迎来和我交换一点想法。愿我们都能在各自喜欢的事物里，找到继续前进的理由。
 
 <hr>
 
 <p class="about-license"><small>本站原创文章及原创图片，除特别注明外，采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 协议发布。本站使用的主题、Live2D 模型、背景图片、字体及第三方代码，其版权和许可归原作者所有，并按照各自许可证使用。</small></p>
+
+<p class="about-contact">QQ：3089730669<br>Email：styxsora@gmail.com<br>Github：<a href="https://github.com/sorastyx" target="_blank" rel="noopener">https://github.com/sorastyx</a></p>
