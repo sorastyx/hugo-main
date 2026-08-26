@@ -1,5 +1,5 @@
 {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
-{{ $articleContent := .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable }}
+{{ $articleContent := .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
 
 {{ if .Params.password_protected }}
 <section class="article-content article-content--locked" data-content-url="{{ .Params.protected_content }}" data-birthday-effects="{{ if .Params.birthday_effects }}true{{ else }}false{{ end }}" aria-live="polite">

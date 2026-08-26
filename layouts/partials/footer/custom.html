@@ -469,6 +469,147 @@
     })();
 </script>
 
+{{ if and .IsPage .Params.about_page }}
+<style>
+    .article-page .main-article .article-content > #about-profile-marker {
+        display: none;
+    }
+
+    .article-page .main-article .article-content .about-intro {
+        margin: 0 calc(var(--card-padding) * -1) 2.5rem;
+        padding: 2.8rem var(--card-padding) 2.4rem;
+        border-bottom: 1px solid var(--card-separator-color);
+        background: var(--card-background-selected);
+    }
+
+    .article-page .main-article .article-content .about-kicker {
+        margin: 0 0 1rem;
+        color: var(--accent-color);
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .article-page .main-article .article-content .about-intro h2 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: var(--card-text-color-main);
+        font-size: 3.2rem;
+        line-height: 1.25;
+    }
+
+    .article-page .main-article .article-content .about-lead {
+        max-width: 58rem;
+        margin: 1.2rem 0 0;
+        color: var(--card-text-color-secondary);
+        font-size: 1.85rem;
+        line-height: 1.85;
+    }
+
+    .article-page .main-article .article-content .about-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 1.7rem;
+    }
+
+    .article-page .main-article .article-content .about-tags span {
+        display: inline-block;
+        padding: 0.45rem 0.9rem;
+        border: 1px solid var(--accent-color);
+        border-radius: 999px;
+        color: var(--accent-color);
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+
+    .article-page .main-article .article-content .about-facts {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        margin: 0 0 2.7rem;
+    }
+
+    .article-page .main-article .article-content .about-fact {
+        display: flex;
+        min-height: 9.5rem;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.25rem 1.4rem;
+        border: 1px solid var(--card-separator-color);
+        border-radius: 8px;
+        background: var(--card-background-selected);
+    }
+
+    .article-page .main-article .article-content .about-fact-label {
+        margin-bottom: 0.5rem;
+        color: var(--accent-color);
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .article-page .main-article .article-content .about-fact strong {
+        color: var(--card-text-color-main);
+        font-size: 1.6rem;
+        line-height: 1.45;
+    }
+
+    .article-page .main-article .article-content .about-fact small {
+        margin-top: 0.35rem;
+        color: var(--card-text-color-secondary);
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+    .article-page .main-article .article-content > h2 {
+        margin-top: 2.4em;
+        font-size: 2.15rem;
+    }
+
+    .article-page .main-article .article-content > ul {
+        padding: 0.5rem 1.5rem 0.5rem 2.5rem;
+        border-radius: 8px;
+        background: var(--card-background-selected);
+    }
+
+    .article-page .main-article .article-content > ul li {
+        margin: 0.75rem 0;
+        padding-left: 0.3rem;
+    }
+
+    .article-page .main-article .article-content > blockquote {
+        border-inline-start: 4px solid var(--accent-color);
+        border-radius: 0 8px 8px 0;
+        background: var(--card-background-selected);
+    }
+
+    .article-page .main-article .article-content .about-license {
+        margin: 1.5rem 0 0;
+        color: var(--card-text-color-tertiary);
+        line-height: 1.8;
+    }
+
+    @media (max-width: 700px) {
+        .article-page .main-article .article-content .about-intro h2 {
+            font-size: 2.5rem;
+        }
+
+        .article-page .main-article .article-content .about-lead {
+            font-size: 1.65rem;
+        }
+
+        .article-page .main-article .article-content .about-facts {
+            grid-template-columns: 1fr;
+        }
+
+        .article-page .main-article .article-content > h2 {
+            font-size: 2rem;
+        }
+    }
+</style>
+{{ end }}
+
 {{ if and .IsPage .Params.birthday_effects }}
 
 <style>
