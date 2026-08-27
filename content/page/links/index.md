@@ -9,6 +9,10 @@ links:
     description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
     website: https://www.typescriptlang.org
     image: ts-logo-128.jpg
+  - title: Rinai
+    description: Rinai的私人花园
+    website: https://blog.g-rinai.cn/about/
+    image: https://blog.g-rinai.cn/_astro/avatar3.BLawe1Ux_Z62ouN.webp
 menu:
     main: 
         weight: -50
