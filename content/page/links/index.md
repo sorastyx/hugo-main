@@ -22,20 +22,12 @@ menu:
 comments: false
 ---
 
-To use this feature, add `links` section to frontmatter.
-
-This page's frontmatter:
+下面是一些友情链接，欢迎联系我与我交换友链！交换友链时可以尝试给出以下内容：
 
 ```yaml
 links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
+  - title: 网站名称
+    description: 网站简介
+    website: https://example.com
+    image: https://example.com/avatar.png
 ```
-
-`image` field accepts both local and external images.
