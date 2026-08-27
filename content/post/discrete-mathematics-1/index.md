@@ -39,31 +39,31 @@ lang: "zh-CN"
 $$
 \begin{aligned}
 A\subseteq B
-&\Longleftrightarrow \rho(A)\subseteq \rho(B),\\
+&\Longleftrightarrow \rho(A)\subseteq \rho(B),\\\\
 A\subseteq C,\ B\subseteq C
-&\Longleftrightarrow A\cup B\subseteq C,\\
+&\Longleftrightarrow A\cup B\subseteq C,\\\\
 A\subseteq B
-&\Longrightarrow A\cap C\subseteq B\cap C,\\
+&\Longrightarrow A\cap C\subseteq B\cap C,\\\\
 A\cap C\subseteq B\cap C,\ A-C\subseteq B-C
-&\Longrightarrow A\subseteq B,\\
+&\Longrightarrow A\subseteq B,\\\\
 A\subseteq B
-&\Longrightarrow A\cup C\subseteq B\cup C,\\
+&\Longrightarrow A\cup C\subseteq B\cup C,\\\\
 A\subseteq C,\ B\subseteq D
-&\Longrightarrow \rho(A\times B)\subseteq \rho(C\times D),\\
+&\Longrightarrow \rho(A\times B)\subseteq \rho(C\times D),\\\\
 A\subseteq C,\ B\subseteq D
-&\Longrightarrow A\times B\subseteq C\times D,\\
+&\Longrightarrow A\times B\subseteq C\times D,\\\\
 B\subseteq C
-&\Longrightarrow A\times B\subseteq A\times C,\\
+&\Longrightarrow A\times B\subseteq A\times C,\\\\
 A\times B\subseteq A\times C,\ A\neq\varnothing
-&\Longrightarrow B\subseteq C,\\
+&\Longrightarrow B\subseteq C,\\\\
 \rho(A)\cup\rho(B)
-&\subseteq \rho(A\cup B),\\
+&\subseteq \rho(A\cup B),\\\\
 \rho(A)\cup\rho(B)=\rho(A\cup B)
-&\Longleftrightarrow A\subseteq B\ \text{或}\ B\subseteq A,\\
+&\Longleftrightarrow A\subseteq B\ \text{或}\ B\subseteq A,\\\\
 \rho(A)\cap\rho(B)
-&=\rho(A\cap B),\\
+&=\rho(A\cap B),\\\\
 \rho(A-B)
-&\subseteq \bigl(\rho(A)-\rho(B)\bigr)\cup\{\varnothing\},\\
+&\subseteq \bigl(\rho(A)-\rho(B)\bigr)\cup\lbrace\varnothing\rbrace,\\\\
 A-B=B-A
 &\Longrightarrow A=B.
 \end{aligned}
@@ -91,9 +91,9 @@ $$
 
 6. 注意拟序关系，即具有反自反性和传递性的集合，是可以证明出来具有反对称性的，具体证明参考 PPT。
 
-7. 等价类的定义可以直接按如下形式理解：用 $[a]_R$ 表示元素 $a$ 的等价类，其中 $[a]_R=\{x\mid x\in A\text{ 且 }xRa\}$，$a$ 称为这个等价类的代表元。这个定义比前面对等价类的正式定义更直观：具有某种共同性质的若干元素可以归为一类，因而可以把它们放进同一个集合中，组成一个等价类。
+7. 等价类的定义可以直接按如下形式理解：用 $[a]_R$ 表示元素 $a$ 的等价类，其中 $[a]_R=\lbrace x\mid x\in A\text{ 且 }xRa\rbrace$，$a$ 称为这个等价类的代表元。这个定义比前面对等价类的正式定义更直观：具有某种共同性质的若干元素可以归为一类，因而可以把它们放进同一个集合中，组成一个等价类。
 
-8. 由等价关系求商集比较简单。按照上面的理解，对任意 $a\in A$（注意是原始集合 $A$ 中的每个元素），判断它属于哪个等价类，从而划分出不同的等价类，最后把所有等价类放入一个大集合中，即得到商集。由划分求等价关系可使用公式：设 $C=\{M_1,M_2,\ldots,M_n\}$ 是集合 $A$ 的一个划分，则 $C$ 对应的等价关系为 $R=(M_1\times M_1)\cup(M_2\times M_2)\cup\cdots\cup(M_n\times M_n)$，其中 $\times$ 表示笛卡尔积，$M_1,M_2,\ldots,M_n$ 均为集合。因为商集本身就是集合 $A$ 的一个划分，所以也可以用该公式求出商集对应的等价关系。
+8. 由等价关系求商集比较简单。按照上面的理解，对任意 $a\in A$（注意是原始集合 $A$ 中的每个元素），判断它属于哪个等价类，从而划分出不同的等价类，最后把所有等价类放入一个大集合中，即得到商集。由划分求等价关系可使用公式：设 $C=\lbrace M_1,M_2,\ldots,M_n\rbrace$ 是集合 $A$ 的一个划分，则 $C$ 对应的等价关系为 $R=(M_1\times M_1)\cup(M_2\times M_2)\cup\cdots\cup(M_n\times M_n)$，其中 $\times$ 表示笛卡尔积，$M_1,M_2,\ldots,M_n$ 均为集合。因为商集本身就是集合 $A$ 的一个划分，所以也可以用该公式求出商集对应的等价关系。
 
 9. Hasse 图中各个可比元素之间呈现出来的高低关系不必过于严格，大体能够看出即可。此外，根据 Hasse 图写偏序关系时，一定不要忘记体现自反性和传递性。例如，若 Hasse 图中有 $a-b-c$（符号“$-$”表示两个元素在 Hasse 图中相连），则写偏序关系时必须包含 $(a,a),(b,b),(c,c),(a,c)$。
 
@@ -169,17 +169,17 @@ $$P\leftrightarrow Q=(P\to Q)\land(Q\to P).$$
 $$
 \begin{aligned}
 &\text{用形式演绎法证明：}\quad
-\{P \to R\} \Rightarrow (Q \to R) \to ((P \vee Q) \to R) \\[8pt]
+\lbrace P \to R\rbrace \Rightarrow (Q \to R) \to ((P \vee Q) \to R) \\\\[8pt]
 &(1)\quad P \to R
-\qquad \text{规则 }1 \\[4pt]
+\qquad \text{规则 }1 \\\\[4pt]
 &(2)\quad Q \to R
-\qquad \text{规则 }3 \\[4pt]
+\qquad \text{规则 }3 \\\\[4pt]
 &(3)\quad P \vee Q
-\qquad \text{规则 }3 \\[4pt]
+\qquad \text{规则 }3 \\\\[4pt]
 &(4)\quad R
-\qquad \text{规则 }2,\ \text{根据 }(1),(2),(3) \\[4pt]
+\qquad \text{规则 }2,\ \text{根据 }(1),(2),(3) \\\\[4pt]
 &(5)\quad (P \vee Q) \to R
-\qquad \text{规则 }3,\ \text{根据 }(3),(4) \\[4pt]
+\qquad \text{规则 }3,\ \text{根据 }(3),(4) \\\\[4pt]
 &(6)\quad (Q \to R) \to ((P \vee Q) \to R)
 \qquad \text{规则 }3,\ \text{根据 }(2),(5)
 \end{aligned}
@@ -192,27 +192,27 @@ $$
 $$
 \begin{aligned}
 &\text{ 试用形式演绎法证明 }
-\{P \vee Q,\ Q \to R,\ P \to M,\ \neg M\}
+\lbrace P \vee Q,\ Q \to R,\ P \to M,\ \neg M\rbrace
 \text{ 共同蕴涵 }
-R \wedge (P \vee Q). \\[8pt]
+R \wedge (P \vee Q). \\\\[8pt]
 &(1)\quad P \to M
-\qquad \text{规则 }1 \\[4pt]
+\qquad \text{规则 }1 \\\\[4pt]
 &(2)\quad \neg M \to \neg P
-\qquad \text{规则 }2,\ \text{根据 }(1) \\[4pt]
+\qquad \text{规则 }2,\ \text{根据 }(1) \\\\[4pt]
 &(3)\quad \neg M
-\qquad \text{规则 }1 \\[4pt]
+\qquad \text{规则 }1 \\\\[4pt]
 &(4)\quad \neg P
-\qquad \text{规则 }2,\ \text{根据 }(2),(3) \\[4pt]
+\qquad \text{规则 }2,\ \text{根据 }(2),(3) \\\\[4pt]
 &(5)\quad P \vee Q
-\qquad \text{规则 }1 \\[4pt]
+\qquad \text{规则 }1 \\\\[4pt]
 &(6)\quad \neg P \to Q
-\qquad \text{规则 }2,\ \text{根据 }(5) \\[4pt]
+\qquad \text{规则 }2,\ \text{根据 }(5) \\\\[4pt]
 &(7)\quad Q
-\qquad \text{规则 }2,\ \text{根据 }(4),(6) \\[4pt]
+\qquad \text{规则 }2,\ \text{根据 }(4),(6) \\\\[4pt]
 &(8)\quad Q \to R
-\qquad \text{规则 }1 \\[4pt]
+\qquad \text{规则 }1 \\\\[4pt]
 &(9)\quad R
-\qquad \text{规则 }2,\ \text{根据 }(7),(8) \\[4pt]
+\qquad \text{规则 }2,\ \text{根据 }(7),(8) \\\\[4pt]
 &(10)\quad R \wedge (P \vee Q)
 \qquad \text{规则 }2,\ \text{根据 }(5),(9)
 \end{aligned}
@@ -232,8 +232,8 @@ $$
 
 3. 下列两种写法都是正确的：
 
-- $\forall x\,G(x)\land\forall x\,H(x)=\forall x\bigl(G(x)\land H(x)\bigr)$；
-- $\forall x\,G(x)\land\forall x\,H(x)=\forall x\forall y\bigl(G(x)\land H(y)\bigr)$。
+- $\forall x\thinspace G(x)\land\forall x\thinspace H(x)=\forall x\bigl(G(x)\land H(x)\bigr)$；
+- $\forall x\thinspace G(x)\land\forall x\thinspace H(x)=\forall x\forall y\thinspace\bigl(G(x)\land H(y)\bigr)$。
 
 前者使用了 PPT 中的引理 2，后者使用了改名规则。
 
@@ -242,41 +242,35 @@ $$
 $$
 \begin{aligned}
 &\text{当论域可数时有：}\quad
-\forall x \forall y\,P(x,y) = \forall y \forall x\,P(x,y),
+\forall x \forall y\thinspace P(x,y) = \forall y \forall x\thinspace P(x,y),
 \quad
-\exists x \exists y\,P(x,y) = \exists y \exists x\,P(x,y)
-\\[8pt]
-
-&\text{}\\[4pt]
-
+\exists x \exists y\thinspace P(x,y) = \exists y \exists x\thinspace P(x,y)
+\\\\[8pt]
+&\text{}\\\\[4pt]
 &1)\quad
-\forall x\,(A(x)\to B(x))
+\forall x\thinspace(A(x)\to B(x))
 \Rightarrow
-\bigl(\forall x\,A(x)\to \forall x\,B(x)\bigr)
-\\[6pt]
-
+\bigl(\forall x\thinspace A(x)\to \forall x\thinspace B(x)\bigr)
+\\\\[6pt]
 &2)\quad
-\bigl(\forall x\,A(x)\vee \forall x\,B(x)\bigr)
+\bigl(\forall x\thinspace A(x)\vee \forall x\thinspace B(x)\bigr)
 \Rightarrow
-\forall x\,\bigl(A(x)\vee B(x)\bigr)
-\\[6pt]
-
+\forall x\thinspace\bigl(A(x)\vee B(x)\bigr)
+\\\\[6pt]
 &3)\quad
-\exists x\,\bigl(A(x)\wedge B(x)\bigr)
+\exists x\thinspace\bigl(A(x)\wedge B(x)\bigr)
 \Rightarrow
-\bigl(\exists x\,A(x)\wedge \exists x\,B(x)\bigr)
-\\[6pt]
-
+\bigl(\exists x\thinspace A(x)\wedge \exists x\thinspace B(x)\bigr)
+\\\\[6pt]
 &4)\quad
-\bigl(\exists x\,A(x)\to \forall x\,B(x)\bigr)
+\bigl(\exists x\thinspace A(x)\to \forall x\thinspace B(x)\bigr)
 \Rightarrow
-\forall x\,\bigl(A(x)\to B(x)\bigr)
-\\[6pt]
-
+\forall x\thinspace\bigl(A(x)\to B(x)\bigr)
+\\\\[6pt]
 &5)\quad
-\forall x\,\bigl(A(x)\vee B(x)\bigr)
+\forall x\thinspace\bigl(A(x)\vee B(x)\bigr)
 \Rightarrow
-\bigl(\forall x\,A(x)\vee \exists x\,B(x)\bigr)
+\bigl(\forall x\thinspace A(x)\vee \exists x\thinspace B(x)\bigr)
 \end{aligned}
 $$
 
@@ -391,17 +385,17 @@ Euler 路转有向树：选取 Euler 路的起点（同时也是终点的那个�
 
 ##### 例题（2）
 
-**题目：** 设 $D=(V,A)$ 为有限有向简单图，记 $d^+(v)$ 和 $d^-(v)$ 分别为顶点 $v$ 的出度和入度，$\delta^+(D)=\min_{v\in V}d^+(v)$ 为最小出度，$\delta^-(D)=\min_{v\in V}d^-(v)$ 为最小入度。已知 $\delta^+(D)>0$、$\delta(D)\geq2$ 且 $\delta^-(D)>0$。证明：$D$ 中存在长度至少为 $\max\{\delta^-(D),\delta^+(D)\}+1$ 的有向回路。
+**题目：** 设 $D=(V,A)$ 为有限有向简单图，记 $d^+(v)$ 和 $d^-(v)$ 分别为顶点 $v$ 的出度和入度，$\delta^+(D)=\min_{v\in V}d^+(v)$ 为最小出度，$\delta^-(D)=\min_{v\in V}d^-(v)$ 为最小入度。已知 $\delta^+(D)>0$、$\delta(D)\geq2$ 且 $\delta^-(D)>0$。证明：$D$ 中存在长度至少为 $\max\lbrace\delta^-(D),\delta^+(D)\rbrace+1$ 的有向回路。
 
 这道题显然是将极大路径法推广至有向图的案例，注意仔细体会和理解下面的证明，其实你就能知道本质还是一样的，仍然是利用了极大路径没有路径外相邻的点这条最重要的前提。
 
 在 $D$ 中取一条极大有向路 $L=v_1\to v_2\to\cdots\to v_k$。这里“极大”是指既不能在 $v_1$ 前面添加路径外的顶点，也不能在 $v_k$ 后面添加路径外的顶点。
 
-先考察起点 $v_1$。因为 $\delta^-(D)>0$，所以 $d^-(v_1)\geq\delta^-(D)>0$，从而 $v_1$ 至少有一个入邻点。设 $x$ 是 $v_1$ 的任意入邻点，即存在弧 $x\to v_1$。若 $x\notin V(L)$，则可以得到更长的有向路 $x\to v_1\to v_2\to\cdots\to v_k$，这与 $L$ 是极大路径矛盾。因此，$v_1$ 的所有入邻点都在 $L$ 上。在 $v_1$ 的所有入邻点中，取下标最大的一个，记为 $v_i$，于是有弧 $v_i\to v_1$。由于 $D$ 是简单有向图，不存在反身弧，所以 $i\geq2$。此时 $v_1\to v_2\to\cdots\to v_i\to v_1$ 构成一个有向回路，记为 $C_1$，其长度为 $|C_1|=i$。因为 $v_i$ 是下标最大的、指向 $v_1$ 的顶点，所以 $v_1$ 的所有入邻点只能位于集合 $\{v_2,v_3,\ldots,v_i\}$ 中。该集合共有 $i-1$ 个顶点，因此 $d^-(v_1)\leq i-1$。另一方面，由最小入度的定义，有 $d^-(v_1)\geq\delta^-(D)$。于是 $\delta^-(D)\leq d^-(v_1)\leq i-1$，所以 $i\geq\delta^-(D)+1$。因此，$C_1$ 的长度满足 $|C_1|\geq\delta^-(D)+1$。
+先考察起点 $v_1$。因为 $\delta^-(D)>0$，所以 $d^-(v_1)\geq\delta^-(D)>0$，从而 $v_1$ 至少有一个入邻点。设 $x$ 是 $v_1$ 的任意入邻点，即存在弧 $x\to v_1$。若 $x\notin V(L)$，则可以得到更长的有向路 $x\to v_1\to v_2\to\cdots\to v_k$，这与 $L$ 是极大路径矛盾。因此，$v_1$ 的所有入邻点都在 $L$ 上。在 $v_1$ 的所有入邻点中，取下标最大的一个，记为 $v_i$，于是有弧 $v_i\to v_1$。由于 $D$ 是简单有向图，不存在反身弧，所以 $i\geq2$。此时 $v_1\to v_2\to\cdots\to v_i\to v_1$ 构成一个有向回路，记为 $C_1$，其长度为 $|C_1|=i$。因为 $v_i$ 是下标最大的、指向 $v_1$ 的顶点，所以 $v_1$ 的所有入邻点只能位于集合 $\lbrace v_2,v_3,\ldots,v_i\rbrace$ 中。该集合共有 $i-1$ 个顶点，因此 $d^-(v_1)\leq i-1$。另一方面，由最小入度的定义，有 $d^-(v_1)\geq\delta^-(D)$。于是 $\delta^-(D)\leq d^-(v_1)\leq i-1$，所以 $i\geq\delta^-(D)+1$。因此，$C_1$ 的长度满足 $|C_1|\geq\delta^-(D)+1$。
 
-再考察终点 $v_k$。因为 $\delta^+(D)>0$，所以 $d^+(v_k)\geq\delta^+(D)>0$，从而 $v_k$ 至少有一个出邻点。设 $y$ 是 $v_k$ 的任意出邻点，即存在弧 $v_k\to y$。若 $y\notin V(L)$，则可以得到更长的有向路 $v_1\to v_2\to\cdots\to v_k\to y$，这同样与 $L$ 是极大路径矛盾。因此，$v_k$ 的所有出邻点都在 $L$ 上。在 $v_k$ 的所有出邻点中，取下标最小的一个，记为 $v_j$，于是有弧 $v_k\to v_j$。由于 $D$ 不含反身弧，所以 $j\leq k-1$。此时 $v_j\to v_{j+1}\to\cdots\to v_k\to v_j$ 构成一个有向回路，记为 $C_2$，其长度为 $|C_2|=k-j+1$。因为 $v_j$ 是下标最小的、被 $v_k$ 指向的顶点，所以 $v_k$ 的所有出邻点只能位于集合 $\{v_j,v_{j+1},\ldots,v_{k-1}\}$ 中。该集合共有 $k-j$ 个顶点，因此 $d^+(v_k)\leq k-j$。另一方面，由最小出度的定义，有 $d^+(v_k)\geq\delta^+(D)$。于是 $\delta^+(D)\leq d^+(v_k)\leq k-j$，所以 $k-j+1\geq\delta^+(D)+1$。因此，$C_2$ 的长度满足 $|C_2|\geq\delta^+(D)+1$。
+再考察终点 $v_k$。因为 $\delta^+(D)>0$，所以 $d^+(v_k)\geq\delta^+(D)>0$，从而 $v_k$ 至少有一个出邻点。设 $y$ 是 $v_k$ 的任意出邻点，即存在弧 $v_k\to y$。若 $y\notin V(L)$，则可以得到更长的有向路 $v_1\to v_2\to\cdots\to v_k\to y$，这同样与 $L$ 是极大路径矛盾。因此，$v_k$ 的所有出邻点都在 $L$ 上。在 $v_k$ 的所有出邻点中，取下标最小的一个，记为 $v_j$，于是有弧 $v_k\to v_j$。由于 $D$ 不含反身弧，所以 $j\leq k-1$。此时 $v_j\to v_{j+1}\to\cdots\to v_k\to v_j$ 构成一个有向回路，记为 $C_2$，其长度为 $|C_2|=k-j+1$。因为 $v_j$ 是下标最小的、被 $v_k$ 指向的顶点，所以 $v_k$ 的所有出邻点只能位于集合 $\lbrace v_j,v_{j+1},\ldots,v_{k-1}\rbrace$ 中。该集合共有 $k-j$ 个顶点，因此 $d^+(v_k)\leq k-j$。另一方面，由最小出度的定义，有 $d^+(v_k)\geq\delta^+(D)$。于是 $\delta^+(D)\leq d^+(v_k)\leq k-j$，所以 $k-j+1\geq\delta^+(D)+1$。因此，$C_2$ 的长度满足 $|C_2|\geq\delta^+(D)+1$。
 
-最后，在 $C_1,C_2$ 中取长度较大的有向回路 $C$，则 $|C|\geq\max\{|C_1|,|C_2|\}\geq\max\{\delta^-(D)+1,\delta^+(D)+1\}=\max\{\delta^-(D),\delta^+(D)\}+1$。因此，$D$ 中必存在长度至少为 $\max\{\delta^-(D),\delta^+(D)\}+1$ 的有向回路。
+最后，在 $C_1,C_2$ 中取长度较大的有向回路 $C$，则 $|C|\geq\max\lbrace|C_1|,|C_2|\rbrace\geq\max\lbrace\delta^-(D)+1,\delta^+(D)+1\rbrace=\max\lbrace\delta^-(D),\delta^+(D)\rbrace+1$。因此，$D$ 中必存在长度至少为 $\max\lbrace\delta^-(D),\delta^+(D)\rbrace+1$ 的有向回路。
 
 ##### 例题（3）
 
@@ -409,7 +403,7 @@ Euler 路转有向树：选取 Euler 路的起点（同时也是终点的那个�
 
 这道题有两种证明思路：第一种是利用握手定理反证，证明除两个度为 $1$ 的端点外，其余顶点的度均为 $2$；第二种是使用极大路径法。下面采用第二种方法。
 
-设 $u,v$ 是 $G$ 中两个度为 $1$ 的顶点。由 $G$ 的连通性，存在一条从 $u$ 到 $v$ 的简单路，记为 $L$。设该树的顶点集为 $P(G)$，欲证对任意 $w\in P(G)$，都有 $w\in V(L)$。反证：假设存在 $w_0\in P(G)$，但 $w_0\notin V(L)$。由树的连通性，必存在一条从 $u$ 到 $w_0$ 的简单路。由于 $u$ 的度为 $1$，$w_0$ 必经由某条路径连接到 $L$ 的内部顶点，而不是另行直接连接到 $u$。因为 $w_0$ 的度不小于 $2$，故存在顶点 $w_1$ 与 $w_0$ 相邻。设 $L'$ 是从 $u$ 到 $w_0$ 的简单路。顶点 $w_1$ 不能位于 $L$ 或 $L'$ 上，否则会构成回路。继续对 $w_1$ 作同样分析，可得到无限多个互不相同的顶点，与图的有限性矛盾。因此所有顶点都在 $L$ 上，故该树是一条简单路。
+设 $u,v$ 是 $G$ 中两个度为 $1$ 的顶点。由 $G$ 的连通性，存在一条从 $u$ 到 $v$ 的简单路，记为 $L$。设该树的顶点集为 $P(G)$，欲证对任意 $w\in P(G)$，都有 $w\in V(L)$。反证：假设存在 $w_0\in P(G)$，但 $w_0\notin V(L)$。由树的连通性，必存在一条从 $u$ 到 $w_0$ 的简单路。由于 $u$ 的度为 $1$，$w_0$ 必经由某条路径连接到 $L$ 的内部顶点，而不是另行直接连接到 $u$。因为 $w_0$ 的度不小于 $2$，故存在顶点 $w_1$ 与 $w_0$ 相邻。设 $L^{\prime}$ 是从 $u$ 到 $w_0$ 的简单路。顶点 $w_1$ 不能位于 $L$ 或 $L^{\prime}$ 上，否则会构成回路。继续对 $w_1$ 作同样分析，可得到无限多个互不相同的顶点，与图的有限性矛盾。因此所有顶点都在 $L$ 上，故该树是一条简单路。
 
 #### 2. 最长路与最短路法
 
@@ -429,9 +423,9 @@ Euler 路转有向树：选取 Euler 路的起点（同时也是终点的那个�
 
 **题目：** 若 $G$ 是具有 $n$ 个顶点的连通简单图，且 $n\geq2z+1$、最小度 $\delta(G)=z$，证明：图 $G$ 中存在一条长度至少为 $2z$ 的简单路。（25 级计算机学院离散数学Ⅰ图论压轴证明题；最长路法与反证法）
 
-设 $P$ 是图 $G$ 中的一条**最长简单路**，其顶点序列为 $P=v_0v_1v_2\cdots v_m$。这条路径包含 $m+1$ 个顶点，长度为 $m$。采用反证法，假设不存在题目所述的路径，即最长路 $P$ 的长度满足 $m<2z$。由于 $P$ 是最长路，路径端点 $v_0,v_m$ 不能与路径 $P$ 外的任何顶点相邻；否则可将该外部顶点加入 $P$，得到长度为 $m+1$ 的路径，与 $P$ 最长矛盾。因此，$v_0,v_m$ 的所有邻点都在 $P$ 上。由最小度 $\delta(G)=z$ 可知，$v_0$ 在集合 $\{v_1,v_2,\ldots,v_m\}$ 中至少有 $z$ 个邻点，$v_m$ 在集合 $\{v_0,v_1,\ldots,v_{m-1}\}$ 中也至少有 $z$ 个邻点。
+设 $P$ 是图 $G$ 中的一条**最长简单路**，其顶点序列为 $P=v_0v_1v_2\cdots v_m$。这条路径包含 $m+1$ 个顶点，长度为 $m$。采用反证法，假设不存在题目所述的路径，即最长路 $P$ 的长度满足 $m<2z$。由于 $P$ 是最长路，路径端点 $v_0,v_m$ 不能与路径 $P$ 外的任何顶点相邻；否则可将该外部顶点加入 $P$，得到长度为 $m+1$ 的路径，与 $P$ 最长矛盾。因此，$v_0,v_m$ 的所有邻点都在 $P$ 上。由最小度 $\delta(G)=z$ 可知，$v_0$ 在集合 $\lbrace v_1,v_2,\ldots,v_m\rbrace$ 中至少有 $z$ 个邻点，$v_m$ 在集合 $\lbrace v_0,v_1,\ldots,v_{m-1}\rbrace$ 中也至少有 $z$ 个邻点。
 
-定义两个下标集合：$S=\{i\mid1\leq i\leq m,\ v_0\text{ 与 }v_i\text{ 相邻}\}$，$T=\{i\mid1\leq i\leq m,\ v_m\text{ 与 }v_{i-1}\text{ 相邻}\}$。显然，$|S|=d(v_0)\geq z$，$|T|=d(v_m)\geq z$，且 $S,T\subseteq\{1,2,\ldots,m\}$。根据反证假设 $m<2z$，有 $|S|+|T|\geq2z>m$。由于集合 $\{1,2,\ldots,m\}$ 只有 $m$ 个元素，所以 $S\cap T\neq\varnothing$。因此存在下标 $j$（$1\leq j\leq m$），使得 $v_0$ 与 $v_j$ 相邻，且 $v_m$ 与 $v_{j-1}$ 相邻。利用这两条边，可以把原路径 $P$ 闭合为回路 $C=v_0v_1\cdots v_{j-1}v_mv_{m-1}\cdots v_jv_0$。该回路恰好包含路径 $P$ 上的全部 $m+1$ 个顶点。
+定义两个下标集合：$S=\lbrace i\mid1\leq i\leq m,\ v_0\text{ 与 }v_i\text{ 相邻}\rbrace$，$T=\lbrace i\mid1\leq i\leq m,\ v_m\text{ 与 }v_{i-1}\text{ 相邻}\rbrace$。显然，$|S|=d(v_0)\geq z$，$|T|=d(v_m)\geq z$，且 $S,T\subseteq\lbrace1,2,\ldots,m\rbrace$。根据反证假设 $m<2z$，有 $|S|+|T|\geq2z>m$。由于集合 $\lbrace1,2,\ldots,m\rbrace$ 只有 $m$ 个元素，所以 $S\cap T\neq\varnothing$。因此存在下标 $j$（$1\leq j\leq m$），使得 $v_0$ 与 $v_j$ 相邻，且 $v_m$ 与 $v_{j-1}$ 相邻。利用这两条边，可以把原路径 $P$ 闭合为回路 $C=v_0v_1\cdots v_{j-1}v_mv_{m-1}\cdots v_jv_0$。该回路恰好包含路径 $P$ 上的全部 $m+1$ 个顶点。
 
 此时使用图 $G$ 的连通性。若回路 $C$ 已包含 $G$ 的全部顶点，即 $m+1=n$，则 $m=n-1\geq2z$，与假设 $m<2z$ 矛盾。若 $C$ 未包含图中全部顶点，即 $m+1<n$，由于 $G$ 连通，必存在一个不在 $C$ 上的顶点 $u$，它与 $C$ 上的某个顶点 $v_k$ 相邻。于是可从 $u$ 出发，经 $v_k$ 后沿回路 $C$ 的一个方向遍历其余所有顶点，构造一条包含 $m+2$ 个顶点、长度为 $m+1$ 的简单路。这比最长路 $P$ 更长，同样产生矛盾。因此反证假设不成立，图 $G$ 中必存在长度至少为 $2z$ 的简单路。
 
@@ -451,9 +445,9 @@ Euler 路转有向树：选取 Euler 路的起点（同时也是终点的那个�
 
 不妨设 $G$ 连通，否则可对 $G$ 的某个连通分支进行讨论。（1）当 $k=1$ 时，$T$ 为 $K_2$。由于 $\delta(G)\geq1$，图 $G$ 中至少有一条边。任取一条边 $e$，由 $e$ 及其两个端点构成的子图便与 $T$ 同构。
 
-（2）假设当 $k=r$（$r\geq1$）时结论成立。下面证明当 $k=r+1$ 时结论仍成立。此时，$T$ 是具有 $r+2$ 个顶点的树。树 $T$ 至少有两个度为 $1$ 的顶点，任取其中一个记为 $v_0$，令 $T_1=T-\{v_0\}$，则 $T_1$ 是具有 $r+1$ 个顶点的树。由归纳假设，$G$ 中存在一个与 $T_1$ 同构的子图 $G_1$。
+（2）假设当 $k=r$（$r\geq1$）时结论成立。下面证明当 $k=r+1$ 时结论仍成立。此时，$T$ 是具有 $r+2$ 个顶点的树。树 $T$ 至少有两个度为 $1$ 的顶点，任取其中一个记为 $v_0$，令 $T_1=T-\lbrace v_0\rbrace$，则 $T_1$ 是具有 $r+1$ 个顶点的树。由归纳假设，$G$ 中存在一个与 $T_1$ 同构的子图 $G_1$。
 
-在 $T$ 中，设被删除的顶点 $v_0$ 与 $v_1$ 相邻，其中 $v_1\in V(T_1)$；设 $G_1$ 中与 $v_1$ 对应的顶点为 $u_1$。由于 $d_G(u_1)\geq r+1$，而 $G_1$ 只有 $r+1$ 个顶点，除 $u_1$ 外至多有 $r$ 个顶点，因此必存在顶点 $u_0\in V(G)\setminus V(G_1)$，使得 $u_0u_1\in E(G)$。令 $G'=G_1\cup\{u_0u_1\}$，则 $G'$ 与 $T$ 同构。由数学归纳法，结论成立。
+在 $T$ 中，设被删除的顶点 $v_0$ 与 $v_1$ 相邻，其中 $v_1\in V(T_1)$；设 $G_1$ 中与 $v_1$ 对应的顶点为 $u_1$。由于 $d_G(u_1)\geq r+1$，而 $G_1$ 只有 $r+1$ 个顶点，除 $u_1$ 外至多有 $r$ 个顶点，因此必存在顶点 $u_0\in V(G)\setminus V(G_1)$，使得 $u_0u_1\in E(G)$。令 $G^{\prime}=G_1\cup\lbrace u_0u_1\rbrace$，则 $G^{\prime}$ 与 $T$ 同构。由数学归纳法，结论成立。
 
 ##### 例题（4）
 
@@ -543,7 +537,7 @@ $$
 
 因为 $T$ 是 $G$ 的支撑树，所以两图的点集满足 $V(T)=V(G)$，并且边集满足 $E(T)\subseteq E(G)$。
 
-下面证明 $E(G)\subseteq E(T)$。任取一条边 $l\in E(G)$，反设 $l\notin E(T)$。设 $l=uv$，由于 $T$ 是树，所以在 $T$ 中存在唯一一条连接 $u$ 与 $v$ 的路径。将边 $l$ 加入 $T$ 后，这条路径与边 $l$ 共同构成唯一的回路。从该回路中删除一条不同于 $l$ 的边 $e$，得到图 $T'=T+l-e$。删除 $e$ 后回路被破坏，因此 $T'$ 不含回路；同时，由于 $e$ 位于回路上，删除 $e$ 后，原来由 $e$ 连接的两个顶点仍可沿回路中的其余边相互到达，所以 $T'$ 仍然连通。此外，$T'$ 包含 $G$ 的全部顶点。因此，$T'$ 也是 $G$ 的一棵支撑树。又因为 $l\in E(T')$ 而 $l\notin E(T)$，所以 $T'\ne T$。这与 $G$ 只有唯一一棵支撑树 $T$ 矛盾。
+下面证明 $E(G)\subseteq E(T)$。任取一条边 $l\in E(G)$，反设 $l\notin E(T)$。设 $l=uv$，由于 $T$ 是树，所以在 $T$ 中存在唯一一条连接 $u$ 与 $v$ 的路径。将边 $l$ 加入 $T$ 后，这条路径与边 $l$ 共同构成唯一的回路。从该回路中删除一条不同于 $l$ 的边 $e$，得到图 $T^{\prime}=T+l-e$。删除 $e$ 后回路被破坏，因此 $T^{\prime}$ 不含回路；同时，由于 $e$ 位于回路上，删除 $e$ 后，原来由 $e$ 连接的两个顶点仍可沿回路中的其余边相互到达，所以 $T^{\prime}$ 仍然连通。此外，$T^{\prime}$ 包含 $G$ 的全部顶点。因此，$T^{\prime}$ 也是 $G$ 的一棵支撑树。又因为 $l\in E(T^{\prime})$ 而 $l\notin E(T)$，所以 $T^{\prime}\ne T$。这与 $G$ 只有唯一一棵支撑树 $T$ 矛盾。
 
 故任意 $l\in E(G)$ 都有 $l\in E(T)$，即 $E(G)\subseteq E(T)$。结合 $E(T)\subseteq E(G)$ 以及 $V(T)=V(G)$，可得 $G=T$。
 
@@ -555,9 +549,9 @@ $$
 
 若 $l\in E(T)$，则 $T$ 本身就是一棵包含边 $l$ 的支撑树，结论成立。
 
-下面考虑 $l\notin E(T)$ 的情况。设 $l=uv$。因为 $T$ 是树，所以在 $T$ 中存在唯一一条连接 $u,v$ 的路径。将边 $l$ 加入 $T$ 后，边 $l$ 与这条路径共同构成唯一回路 $C$，且 $l\in E(C)$。在回路 $C$ 中任取一条不同于 $l$ 的边 $e$，令 $T'=T+l-e$。由于从回路中删除了一条边，所以 $T'$ 不含回路；又因为 $e$ 位于回路上，删除 $e$ 后，其两个端点仍然可以通过回路中剩余的边相互到达，所以 $T'$ 仍然连通。在此过程中没有删除任何顶点，因此 $V(T')=V(G)$。
+下面考虑 $l\notin E(T)$ 的情况。设 $l=uv$。因为 $T$ 是树，所以在 $T$ 中存在唯一一条连接 $u,v$ 的路径。将边 $l$ 加入 $T$ 后，边 $l$ 与这条路径共同构成唯一回路 $C$，且 $l\in E(C)$。在回路 $C$ 中任取一条不同于 $l$ 的边 $e$，令 $T^{\prime}=T+l-e$。由于从回路中删除了一条边，所以 $T^{\prime}$ 不含回路；又因为 $e$ 位于回路上，删除 $e$ 后，其两个端点仍然可以通过回路中剩余的边相互到达，所以 $T^{\prime}$ 仍然连通。在此过程中没有删除任何顶点，因此 $V(T^{\prime})=V(G)$。
 
-所以 $T'$ 是 $G$ 的一棵支撑树。由于删除的边 $e\ne l$，故 $l\in E(T')$。因此，$G$ 中存在一棵包含指定边 $l$ 的支撑树。
+所以 $T^{\prime}$ 是 $G$ 的一棵支撑树。由于删除的边 $e\ne l$，故 $l\in E(T^{\prime})$。因此，$G$ 中存在一棵包含指定边 $l$ 的支撑树。
 
 ##### 例题（3）
 
@@ -565,7 +559,7 @@ $$
 
 设 $G$ 有 $n$ 个顶点。我们从顶点 $r$ 开始，逐步构造一个以 $r$ 为根、所有弧都朝向根的有向树。
 
-首先令 $T_1$ 只含有顶点 $r$，即 $V(T_1)=\{r\}$，$E(T_1)=\varnothing$。显然，$T_1$ 是一棵以 $r$ 为根的有向树。假设经过若干次扩充，已经构造出一棵以 $r$ 为根的有向树 $T_k$，其中 $1\le k<n$，并且 $T_k$ 恰好有 $k$ 个顶点。因为 $k<n$，所以 $V(T_k)\ne V(G)$，从而 $G$ 中至少存在一个不属于 $T_k$ 的顶点。任取一个顶点 $x\in V(G)\setminus V(T_k)$。由于 $r$ 是 $G$ 的根，所以在 $G$ 中存在一条从 $x$ 到 $r$ 的有向路，记为 $x=x_0\to x_1\to\cdots\to x_m=r$。在这条有向路上，起点 $x_0=x$ 不属于 $V(T_k)$，而终点 $x_m=r$ 属于 $V(T_k)$。因此，沿着这条有向路从 $x$ 向 $r$ 行进时，必然会第一次进入 $T_k$。设 $x_j$ 是这条有向路上第一个属于 $V(T_k)$ 的顶点。因为 $x_0\notin V(T_k)$，所以 $j\ge1$。由 $x_j$ 的选取可知，$x_{j-1}\notin V(T_k)$，并且由于 $x_0\to x_1\to\cdots\to x_m$ 是一条有向路，故 $x_{j-1}x_j\in E(G)$，方向为 $x_{j-1}\to x_j$。现在把新顶点 $x_{j-1}$ 以及弧 $x_{j-1}\to x_j$ 加入 $T_k$，定义 $T_{k+1}$ 为 $V(T_{k+1})=V(T_k)\cup\{x_{j-1}\}$，$E(T_{k+1})=E(T_k)\cup\{x_{j-1}\to x_j\}$。
+首先令 $T_1$ 只含有顶点 $r$，即 $V(T_1)=\lbrace r\rbrace$，$E(T_1)=\varnothing$。显然，$T_1$ 是一棵以 $r$ 为根的有向树。假设经过若干次扩充，已经构造出一棵以 $r$ 为根的有向树 $T_k$，其中 $1\le k<n$，并且 $T_k$ 恰好有 $k$ 个顶点。因为 $k<n$，所以 $V(T_k)\ne V(G)$，从而 $G$ 中至少存在一个不属于 $T_k$ 的顶点。任取一个顶点 $x\in V(G)\setminus V(T_k)$。由于 $r$ 是 $G$ 的根，所以在 $G$ 中存在一条从 $x$ 到 $r$ 的有向路，记为 $x=x_0\to x_1\to\cdots\to x_m=r$。在这条有向路上，起点 $x_0=x$ 不属于 $V(T_k)$，而终点 $x_m=r$ 属于 $V(T_k)$。因此，沿着这条有向路从 $x$ 向 $r$ 行进时，必然会第一次进入 $T_k$。设 $x_j$ 是这条有向路上第一个属于 $V(T_k)$ 的顶点。因为 $x_0\notin V(T_k)$，所以 $j\ge1$。由 $x_j$ 的选取可知，$x_{j-1}\notin V(T_k)$，并且由于 $x_0\to x_1\to\cdots\to x_m$ 是一条有向路，故 $x_{j-1}x_j\in E(G)$，方向为 $x_{j-1}\to x_j$。现在把新顶点 $x_{j-1}$ 以及弧 $x_{j-1}\to x_j$ 加入 $T_k$，定义 $T_{k+1}$ 为 $V(T_{k+1})=V(T_k)\cup\lbrace x_{j-1}\rbrace$，$E(T_{k+1})=E(T_k)\cup\lbrace x_{j-1}\to x_j\rbrace$。
 
 下面说明 $T_{k+1}$ 仍然是一棵以 $r$ 为根的有向树。
 
@@ -648,7 +642,7 @@ $$
 
 当 $n=1$ 时，唯一的顶点自身构成一条平凡的有向 Hamilton 路；当 $n=2$ 时，两个顶点之间恰有一条有向边，该边构成一条经过全部顶点的有向 Hamilton 路。
 
-假设任意 $k$ 阶竞赛图都存在有向 Hamilton 路。现设 $T$ 是一个 $k+1$ 阶竞赛图，从中任取一个顶点 $v$ 并暂时删除，得到 $k$ 阶子图 $T'$。由归纳假设，$T'$ 中存在有向 Hamilton 路 $v_1\to v_2\to\cdots\to v_k$。
+假设任意 $k$ 阶竞赛图都存在有向 Hamilton 路。现设 $T$ 是一个 $k+1$ 阶竞赛图，从中任取一个顶点 $v$ 并暂时删除，得到 $k$ 阶子图 $T^{\prime}$。由归纳假设，$T^{\prime}$ 中存在有向 Hamilton 路 $v_1\to v_2\to\cdots\to v_k$。
 
 把顶点 $v$ 重新加入，分三种情况讨论：
 
@@ -741,9 +735,9 @@ $$
 
   **证明：** 只需证明 $ba_0,ba_1,\ldots,\allowbreak ba_{m-1}$ 两两模 $m$ 不同余。任取 $i\ne j$，反设 $ba_i\equiv ba_j\pmod m$，则 $m\mid b(a_i-a_j)$。因为 $\gcd(b,m)=1$，所以由同余式的消去律可得 $m\mid(a_i-a_j)$，即 $a_i\equiv a_j\pmod m$。但 $a_0,a_1,\ldots,a_{m-1}$ 是模 $m$ 的完全剩余系，因此当 $i\ne j$ 时必有 $a_i\not\equiv a_j\pmod m$，矛盾。所以 $ba_0,ba_1,\ldots,\allowbreak ba_{m-1}$ 两两模 $m$ 不同余。由于它们共有 $m$ 个数，分别属于模 $m$ 的 $m$ 个不同剩余类，因此 $ba_0,ba_1,\ldots,\allowbreak ba_{m-1}$ 构成模 $m$ 的一个完全剩余系。证毕。
 
-- **结论二：** 设 $r_1,r_2,\ldots,r_{\varphi(m)}$ 是模 $m$ 的一个简化剩余系，固定 $i\in\{1,2,\ldots,\varphi(m)\}$，且 $x_0$ 是同余方程 $r_i x\equiv1\pmod m$ 的一个解。证明：存在某个 $j\in\{1,2,\ldots,\varphi(m)\}$，使 $x_0\equiv r_j\pmod m$。
+- **结论二：** 设 $r_1,r_2,\ldots,r_{\varphi(m)}$ 是模 $m$ 的一个简化剩余系，固定 $i\in\lbrace1,2,\ldots,\varphi(m)\rbrace$，且 $x_0$ 是同余方程 $r_i x\equiv1\pmod m$ 的一个解。证明：存在某个 $j\in\lbrace1,2,\ldots,\varphi(m)\rbrace$，使 $x_0\equiv r_j\pmod m$。
 
-  **证明：** 由 $r_i x_0\equiv1\pmod m$ 可知 $m\mid(r_i x_0-1)$，所以存在整数 $q$，使 $r_i x_0-mq=1$。若整数 $d$ 同时整除 $x_0$ 和 $m$，则 $d\mid r_i x_0$ 且 $d\mid mq$，从而 $d\mid(r_i x_0-mq)=1$，因此 $d=1$。所以 $\gcd(x_0,m)=1$。这说明 $x_0$ 所在的模 $m$ 剩余类是一个简化剩余类。由于 $r_1,r_2,\ldots,r_{\varphi(m)}$ 是模 $m$ 的简化剩余系，它们恰好代表模 $m$ 的全部简化剩余类，因此存在唯一的 $j\in\{1,2,\ldots,\varphi(m)\}$，使 $x_0\equiv r_j\pmod m$。证毕。
+  **证明：** 由 $r_i x_0\equiv1\pmod m$ 可知 $m\mid(r_i x_0-1)$，所以存在整数 $q$，使 $r_i x_0-mq=1$。若整数 $d$ 同时整除 $x_0$ 和 $m$，则 $d\mid r_i x_0$ 且 $d\mid mq$，从而 $d\mid(r_i x_0-mq)=1$，因此 $d=1$。所以 $\gcd(x_0,m)=1$。这说明 $x_0$ 所在的模 $m$ 剩余类是一个简化剩余类。由于 $r_1,r_2,\ldots,r_{\varphi(m)}$ 是模 $m$ 的简化剩余系，它们恰好代表模 $m$ 的全部简化剩余类，因此存在唯一的 $j\in\lbrace1,2,\ldots,\varphi(m)\rbrace$，使 $x_0\equiv r_j\pmod m$。证毕。
 
 ### 秦九韶定理与欧拉函数
 
