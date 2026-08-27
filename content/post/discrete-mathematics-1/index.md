@@ -2,7 +2,7 @@
 title: "离散数学Ⅰ 笔记"
 date: 2026-08-27
 slug: "discrete-mathematics-1-notes"
-description: "记录我学习软件学院离散数学Ⅰ时整理的概念、结论与证明思路。"
+description: "记录我学习离散数学Ⅰ时整理的内容"
 categories:
   - "学习"
 math: true
@@ -17,18 +17,6 @@ license-url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 copyright-year: "2026"
 lang: "zh-CN"
 ---
-
-## 版权与许可
-
-© 2026 花鳥風月。除另有说明外，本作品采用 **知识共享 署名-非商业性使用-禁止演绎 4.0 国际许可协议（CC BY-NC-ND 4.0）** 进行许可。
-
-在完整保留作者署名和本许可说明、保持作品内容不变且仅用于非商业目的的前提下，您可以复制和分享本作品。不得将本作品用于商业用途，也不得公开传播修改、改编或演绎后的版本。
-
-许可协议正文：<https://creativecommons.org/licenses/by-nc-nd/4.0/>
-
-本许可不当然覆盖笔记中引用的教材、课件、试题、图片或其他第三方材料；相关内容的权利仍归原权利人所有。
-
-<small>花鳥風月，一介过客，如对笔记有疑问或者有其他问题，欢迎加我的QQ与我交流：3917028347</small>
 
 ## 前言
 
