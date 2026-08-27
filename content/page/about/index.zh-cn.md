@@ -7,7 +7,7 @@ menu:
     weight: -90
     params:
       icon: user
-comments: false
+comments: true
 ---
 
 <div id="about-profile-marker" aria-hidden="true"></div>
