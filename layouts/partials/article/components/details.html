@@ -26,7 +26,8 @@
     {{ $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) }}
     {{ $showDate := not .Date.IsZero }}
     {{ $showLastUpdated := not .Lastmod.IsZero }}
-    {{ $showFooter := or $showDate $showReadingTime $showLastUpdated }}
+    {{ $showWordCount := gt .WordCount 0 }}
+    {{ $showFooter := or $showDate $showReadingTime $showLastUpdated $showWordCount }}
     {{ if $showFooter }}
     <footer class="article-time">
         {{ if $showDate }}
@@ -54,6 +55,15 @@
                 <span id="vercount_value_page_pv">loading... </span>次
             </time>
         </div>
+
+        {{ if $showWordCount }}
+            <div class="article-word-count">
+                {{ partial "helper/icon" "hash" }}
+                <time class="article-time--word-count">
+                    字数 {{ .WordCount }} 字
+                </time>
+            </div>
+        {{ end }}
 		
         {{ if $showReadingTime }}
             <div>

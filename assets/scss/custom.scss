@@ -1,0 +1,8 @@
+/* Keep the word count in the full article metadata row only. */
+.article-list .article-word-count {
+    display: none;
+}
+
+.article-time .article-word-count {
+    white-space: nowrap;
+}
