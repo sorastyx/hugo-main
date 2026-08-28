@@ -4,6 +4,7 @@ date: 2026-08-27
 slug: "discrete-mathematics-1-notes"
 description: "记录我学习离散数学Ⅰ时整理的内容"
 image: "bg.png"
+coverPosition: "center 18%"
 categories:
   - "学习"
 math: true
