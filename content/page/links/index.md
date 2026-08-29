@@ -1,14 +1,6 @@
 ---
 title: 友情链接
 links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
   - title: Rinai
     description: Rinai的私人花园
     website: https://blog.g-rinai.cn/about/
@@ -17,6 +9,10 @@ links:
     description: 成一事者，矢志不渝之愚者；毁一事者，停滞不前之贤者。
     website: https://github.com/SXP-Simon
     image: https://avatars.githubusercontent.com/u/177809507?s=256&v=4
+  - title: Kisechan 的博客！
+    description: Non est ad astra mollis e terris via.
+    website: https://blog.kisechan.space/
+    image: https://blog.kisechan.space/favicon.ico
 menu:
     main: 
         weight: -50
