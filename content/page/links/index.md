@@ -31,3 +31,13 @@ links:
     website: https://example.com
     image: https://example.com/avatar.png
 ```
+
+我的友链信息：
+
+```yaml
+links:
+  - title: 花鳥風月official
+    description: 意志产生希望，希望孕育梦想，梦想改变世界
+    website: https://sorastyx.github.io/
+    image: https://sorastyx.github.io/img/avatar_hu1c0e92488a57e4f8f780a388ae6d5b66_35455_300x0_resize_box_3.png
+```
