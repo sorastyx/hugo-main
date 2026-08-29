@@ -19,7 +19,7 @@ menu:
         params:
             icon: link
 
-comments: false
+comments: true
 ---
 
 下面是一些友情链接，欢迎联系我与我交换友链！交换友链时可以尝试给出以下内容：
