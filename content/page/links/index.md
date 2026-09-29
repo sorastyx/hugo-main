@@ -13,6 +13,10 @@ links:
     description: Non est ad astra mollis e terris via.
     website: https://blog.kisechan.space/
     image: https://blog.kisechan.space/favicon.ico
+  - title: 洛樱
+    description: 一只笨蛋猫娘
+    website: https://lycatears.github.io
+    image: https://www.helloimg.com/i/2026/06/01/6a1c6d5fa216b.jpg
 menu:
     main: 
         weight: -50
