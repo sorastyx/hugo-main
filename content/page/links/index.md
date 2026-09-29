@@ -16,7 +16,7 @@ links:
   - title: 洛樱
     description: 一只笨蛋猫娘
     website: https://lycatears.github.io
-    image: https://www.helloimg.com/i/2026/06/01/6a1c6d5fa216b.jpg
+    image: /friends/luoying.jpg
 menu:
     main: 
         weight: -50
